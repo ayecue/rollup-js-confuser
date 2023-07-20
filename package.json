@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
+  "typings": "dist/index",
   "scripts": {
     "prepublishOnly": "npm run build",
     "dev": "ts-node ./src/index.ts",

@@ -5,6 +5,7 @@
     "lib": ["dom", "es2021"],
     "outDir": "dist",
     "rootDir": "src",
+    "declaration": true,
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
