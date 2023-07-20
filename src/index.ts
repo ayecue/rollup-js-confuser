@@ -10,8 +10,6 @@ export function confuse(
     preset: 'medium'
   }
 ): Plugin {
-  console.log(options);
-
   return {
     name: 'confuse',
     renderChunk: async (code) => {
