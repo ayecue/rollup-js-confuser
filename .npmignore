@@ -1,0 +1,16 @@
+node_modules
+src
+tests
+jest.config.js
+test.js
+test.ts
+example.ts
+tsconfig.json
+.eslintrc
+.gitignore
+.circleci
+coverage
+dist
+README.md
+rollup.config.js
+.env
