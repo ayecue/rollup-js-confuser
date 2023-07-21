@@ -1,6 +1,6 @@
 {
   "name": "rollup-js-confuser",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "main": "dist/index.js",
   "typings": "dist/index",
@@ -9,7 +9,7 @@
     "dev": "ts-node ./src/index.ts",
     "watch": "ts-node-dev ./src/index.ts --watch",
     "build": "tsc -p ./",
-    "test": "rollup -w -c test/rollup.config.js"
+    "test": "rollup -c tests/rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,13 @@
   "bugs": {
     "url": "https://github.com/ayecue/rollup-js-confuser/issues"
   },
-  "keywords": ["rollup", "js-confuser"],
+  "keywords": [
+    "rollup",
+    "js-confuser"
+  ],
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "@types/node": "^12.12.0",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
