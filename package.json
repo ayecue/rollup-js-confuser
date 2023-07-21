@@ -1,7 +1,7 @@
 {
   "name": "rollup-js-confuser",
   "version": "0.2.1",
-  "description": "",
+  "description": "A rollup plugin based on js-confuser.",
   "main": "dist/index.js",
   "typings": "dist/index",
   "scripts": {
