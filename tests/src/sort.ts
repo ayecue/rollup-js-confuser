@@ -4,7 +4,7 @@
  * @param {Array} arr - The array to be sorted.
  * @returns {Array} - The sorted array.
  */
-exports.bubbleSort = function bubbleSort(arr) {
+export function bubbleSort<T>(arr: T[]): T[] {
   try {
     // Check if the input is an array
     if (!Array.isArray(arr)) {
@@ -41,7 +41,7 @@ exports.bubbleSort = function bubbleSort(arr) {
  * @param {Array} arr - The array to be sorted.
  * @returns {Array} - The sorted array.
  */
-exports.mergeSort = function mergeSort(arr) {
+export function mergeSort<T>(arr: T[]): T[] {
   // Base case: if the array has 0 or 1 element, it is already sorted
   if (arr.length <= 1) {
     return arr;
@@ -53,11 +53,11 @@ exports.mergeSort = function mergeSort(arr) {
   const right = arr.slice(mid);
   
   // Recursively sort the two halves
-  const sortedLeft = mergeSort(left);
-  const sortedRight = mergeSort(right);
+  const sortedLeft = mergeSort<T>(left);
+  const sortedRight = mergeSort<T>(right);
   
   // Merge the sorted halves
-  return merge(sortedLeft, sortedRight);
+  return merge<T>(sortedLeft, sortedRight);
 }
 
 /**
@@ -67,8 +67,8 @@ exports.mergeSort = function mergeSort(arr) {
  * @param {Array} rightArr - The right sorted array.
  * @returns {Array} - The merged sorted array.
  */
-function merge(leftArr, rightArr) {
-  let result = [];
+function merge<T>(leftArr: T[], rightArr: T[]): T[] {
+  let result: T[] = [];
   let leftIndex = 0;
   let rightIndex = 0;
   
@@ -104,7 +104,7 @@ function merge(leftArr, rightArr) {
  * @param {Array} arr - The array to be sorted.
  * @returns {Array} - The sorted array.
  */
-exports.selectionSort = function selectionSort(arr) {
+export function selectionSort<T>(arr: T[]): T[] {
   try {
     // Check if arr is an array
     if (!Array.isArray(arr)) {
@@ -142,7 +142,7 @@ exports.selectionSort = function selectionSort(arr) {
  * @param {Array} arr - The array to be sorted.
  * @returns {Array} - The sorted array.
  */
-exports.insertionSort = function insertionSort(arr) {
+export function insertionSort<T>(arr: T[]): T[] {
   try {
     // Check if the input is an array
     if (!Array.isArray(arr)) {

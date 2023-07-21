@@ -1,4 +1,4 @@
-module.exports = function unnecessarilyLongFizzBuzz() {
+export default function unnecessarilyLongFizzBuzz(): void {
   /**
    * This function performs the FizzBuzz game up to a specified number.
    * For multiples of 3, it prints "Fizz". For multiples of 5, it prints "Buzz".

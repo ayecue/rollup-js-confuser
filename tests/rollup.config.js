@@ -3,7 +3,7 @@ const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs').default;
 
 module.exports = {
-    input: 'tests/src/index.js',
+    input: 'tests/dist-ts/index.js',
     output: {
         name: 'test',
         file: 'tests/dist/index.js',

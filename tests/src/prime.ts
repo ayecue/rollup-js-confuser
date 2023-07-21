@@ -4,7 +4,7 @@
  * @param {number} num - The number to check.
  * @returns {boolean} - True if the number is prime, false otherwise.
  */
-exports.isPrime = function isPrime(num) {
+export function isPrime(num: number): boolean {
   // Check if the number is less than 2
   if (num < 2) {
     return false;
@@ -27,7 +27,7 @@ exports.isPrime = function isPrime(num) {
  * @param {number} num2 - The second number.
  * @returns {number} - The result of the prime operations.
  */
-exports.primeOperations = function primeOperations(num1, num2) {
+export function primeOperations(num1: number, num2: number): number {
   // Check if both numbers are prime
   if (!isPrime(num1) || !isPrime(num2)) {
     return 0;

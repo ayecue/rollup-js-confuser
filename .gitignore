@@ -3,3 +3,4 @@ example.ts
 dist
 coverage
 tests/dist
+tests/dist-ts
