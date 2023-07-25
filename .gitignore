@@ -2,5 +2,5 @@ node_modules
 example.ts
 dist
 coverage
-tests/dist
-tests/dist-ts
+tests/mock/dist
+tests/mock/dist-ts

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`confuse default 1`] = `
+{
+  "bar": [Function],
+  "bubbleSort": [Function],
+  "foo": [Function],
+  "isPrime": [Function],
+  "notBeingUseful": [Function],
+  "unnecessarilyLongFizzBuzz": [Function],
+}
+`;
