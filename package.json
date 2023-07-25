@@ -9,7 +9,7 @@
     "dev": "ts-node ./src/index.ts",
     "watch": "ts-node-dev ./src/index.ts --watch",
     "build": "tsc -p ./",
-    "test": "jest ./tests"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
