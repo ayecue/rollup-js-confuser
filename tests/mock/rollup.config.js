@@ -1,12 +1,12 @@
-const { confuse } = require('../dist/index.js');
+const { confuse } = require('../../dist/index.js');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs').default;
 
 module.exports = {
-    input: 'tests/dist-ts/index.js',
+    input: 'tests/mock/dist-ts/index.js',
     output: {
         name: 'test',
-        file: 'tests/dist/index.js',
+        file: 'tests/mock/dist/index.js',
         format: 'cjs'
     },
     plugins: [
